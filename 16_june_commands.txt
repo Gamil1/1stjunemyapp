@@ -1,0 +1,24 @@
+  2  apt-get update
+    4  apt-get install -y openjdk-8-jdk
+    6  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+    7  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+    8  apt-get update; apt-get install -y jenkins
+    9  reboot now
+   11  apt-get update
+   12  apt-get install -y jenkins
+   14  cat /var/lib/jenkins/secrets/initialAdminPassword
+   16  cd /var/lib/jenkins/workspace/appPackage/target/
+   17  ls
+   19  cd
+   21  ssh-keygen -t rsa
+   23  cd /root/.ssh/
+   24  ls
+   25  vi id_rsa
+   26  vim id_rsa.pub
+   27  cd
+   29  adduser nishant
+   31  su nishant
+   33  ls
+   34  cd .ssh/
+   35  ls
+   36  vim id_rsa.pub
